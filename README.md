@@ -9,4 +9,4 @@ docker build -t blender .
 ```
 docker run -dit blender
 ```
-
+3. Execute docker image
