@@ -61,7 +61,7 @@ RUN mkdir /home/scripts \
 RUN rm -rf ${SCRIPT_PATH}/2.92-gpu-ubuntu18.04
 
 # RUN randomization scripts
-RUN blender ${SCRIPT_PATH}/fluid_sim.blend --background --python ${SCRIPT_PATH}/randomization.py
+# RUN blender ${SCRIPT_PATH}/fluid_sim.blend --background --python ${SCRIPT_PATH}/randomization.py
 
 # automate run blender scene and python scripts instead of using command line (using dockerfile or shell script)
 # Push docker image to nautilus server
