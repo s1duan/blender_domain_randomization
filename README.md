@@ -14,3 +14,7 @@ docker run -dit blender
 docker exec NAME_OF_CONTAINER blender /home/scripts/blender_domain_randomization/fluid_sim.blend 
 --background --python /home/scripts/blender_domain_randomization/randomization.py 
 ```
+Note: To find the name of the container run 
+```
+docker ps -a
+```
