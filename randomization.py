@@ -3,7 +3,7 @@ import bpy, sys, os, math, random
 
 RAND = 10 # number of different combinations to try out
 
-imageFolder = "/images"
+imageFolder = "./images"
 lighting = bpy.data.lights["Point"]
 
 for collection in bpy.data.collections:
