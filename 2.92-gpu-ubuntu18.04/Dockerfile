@@ -49,13 +49,12 @@ RUN wget https://www.python.org/ftp/python/3.7.0/Python-3.7.0.tgz \
 RUN rm -rf ${BLENDER_PATH}/python/lib/python3.7/site-packages/numpy 
 
 # install git
-RUN apt-get update \
-	apt-get install -y git
+RUN apt-get update && apt-get install -y git
 
 # clone randomization script from github
 RUN mkdir /home/scripts \
-	cd /home/scripts \
-	git clone https://github.com/s1duan/blender_domain_randomization.git
+	&& cd /home/scripts \
+	&& git clone https://github.com/s1duan/blender_domain_randomization.git
 
 # clean up docker files cloned with the scripts 
 RUN rm -rf ${SCRIPT_PATH}/2.92-gpu-ubuntu18.04
